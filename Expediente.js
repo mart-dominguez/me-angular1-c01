@@ -51,7 +51,6 @@ Area.prototype.pasar= function(e){
 	//quitar de la lista de expedientes el expediente
 }
 
-
 function Usuario(nombre,mail){
 	this.nombre=nombre;
 	this.mail=mail;
@@ -65,9 +64,9 @@ var expediente2 = new Expediente(456,"pepe");
 console.log(expediente1);
 console.log(expediente2);
 
-var area1 = new Expediente("area 1","area1@mail.com");
-var area2 = new Expediente("area 2","area2@mail.com");
-var area3 = new Expediente("area 3","area3@mail.com");
+var area1 = new Area("area 1","area1@mail.com");
+var area2 = new Area("area 2","area2@mail.com");
+var area3 = new Area("area 3","area3@mail.com");
 
 expediente1.pasar(new Pase(new Date(),area1));
 console.log(expediente1);
